@@ -18,7 +18,6 @@ def encrypt_file(file_path):
     with open(file_path, 'rb') as file:
         plaintext = file.read()
 
-    # Encode the binary data using Base64 encoding
     plaintext_encoded = base64.b64encode(plaintext)
 
     # Encrypt the encoded data
@@ -49,8 +48,8 @@ def decrypt_file(file_path):
     decrypted_text_decoded = base64.b64decode(decrypted_text)
 
     # Write the decoded data back to the file
-    with open(file_path, 'wb') as file:
-        file.write(decrypted_text_decoded)
+    with open(file_path, 'wb') as file1:
+        file1.write(decrypted_text_decoded)
 
 
 
