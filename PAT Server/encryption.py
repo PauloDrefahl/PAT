@@ -41,7 +41,7 @@ def decrypt_file(file_path):
     with open(file_path, 'rb') as file:
         encrypted_text = file.read()
 
-    # Decrypt the data
+    
     decrypted_text = cipher.decrypt(encrypted_text)
 
     # Decode the decrypted data using Base64 decoding
